@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<link rel="preload" as="style" href="https://static.harcourtprogramming.co.uk/shared/2018.css" />
+		<link rel="preload" as="style" href="https://static.harcourtprogramming.co.uk/shared/2018-print.css" />
+		<link rel="preload" as="script" crossorigin="anonymous" href="storage.js" />
+
+		<title>Self Care Checklist</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Self Care Checklist" />
+		<meta name="theme-color" content="#888888" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#888888" />
+		<meta name="apple-mobile-web-app-title" content="Self Care Checklist" />
+
+		<link rel="manifest" crossorigin="use-credentials" href="./manifest.json" />
+		<link rel="icon" sizes="192x192" href="icon.png" />
+		<link rel="apple-touch-icon" href="icon.png" />
+
+		<link rel="stylesheet" media="all" href="https://static.harcourtprogramming.co.uk/shared/2018.css" />
+		<link rel="stylesheet" media="all" href="style.css" />
+
+		<script type="module" src="script.js" async></script>
+	</head>
+	<body>
+		<noscript>This page requires JavaScript</noscript>
+		<script>
+			'serviceWorker' in navigator &&
+			navigator.serviceWorker.register( './worker.js' )
+				.catch( e =>
+				{
+					document.body.appendChild( document.createTextNode( e.toString() ) );
+					throw e;
+				}
+			);
+		</script>
+	</body>
+</html>

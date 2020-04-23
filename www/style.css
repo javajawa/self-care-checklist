@@ -1,0 +1,50 @@
+body {
+	font-size: 24px;
+	max-width: 1200px;
+	columns: 12em 3;
+	column-gap: 1em;
+	padding: 0.5em;
+}
+
+label {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	padding: 12px;
+	margin: 0 0 12px;
+	border-radius: 30px;
+	background: #159;
+	text-align: center;
+	color: #eee;
+}
+
+input:checked + label {
+	background: #363;
+}
+
+input[type="checkbox"] {
+	position: fixed;
+	top: -100px;
+}
+
+.delete-card {
+	float: right;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background: red;
+}
+
+#controls {
+	margin-top: 1em;
+	display: block;
+	column-span: all;
+}
+
+#controls label {
+	background: #aacc44;
+	color: black;
+}
+
+@media (prefers-color-scheme: light) {
+}
